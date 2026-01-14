@@ -40,19 +40,18 @@ The model is configured via environment variables.
 
 | Variable        | Description      | Default                    |
 | --------------- | ---------------- | -------------------------- |
-| `WHISPER_MODEL` | Whisper model ID | `openai/whisper-medium.en` |
+| `WHISPER_MODEL` | Whisper model ID | `openai/whisper-tiny.en` |
 
 ### Common models
 
-| Model  | Hugging Face ID            | Approx. VRAM |
+| Model  | Hugging Face ID            | Parameters   |
 | ------ | -------------------------- | ------------ |
-| Tiny   | `openai/whisper-tiny.en`   | ~1 GB        |
-| Base   | `openai/whisper-base.en`   | ~1.5 GB      |
-| Small  | `openai/whisper-small.en`  | ~3 GB        |
-| Medium | `openai/whisper-medium.en` | ~5–6 GB      |
-| Large  | `openai/whisper-large`     | ~10–12 GB    |
-
-Example (`docker-compose.yml`):
+| Tiny   | `openai/whisper-tiny.en`   | 37.8M        |
+| Base   | `openai/whisper-base.en`   | 72.6M      |
+| Small  | `openai/whisper-small.en`  | 0.2B        |
+| Medium | `openai/whisper-medium.en` | 0.8B      |
+| Large  | `openai/whisper-large`     | 2B    |
+| Large Turbo  | `openai/whisper-large-v3-turbo`     | 0.8B    |
 
 ---
 
@@ -141,3 +140,4 @@ record()
 * Each chunk is transcribed independently
 
 ---
+
